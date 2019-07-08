@@ -106,9 +106,9 @@ public class WeatherGUI extends VerticalLayout {
 		return Objects.nonNull(textAreaLog.getValue()) && textAreaLog.getValue().length() > 0
 				? textAreaLog.getValue() + "\n\n" + LocalDate.now() + " " + LocalTime.now()
 						+ "\nPobrano dane pogodowe z adresu: " + WeatherAPIAdress.META_WEATHER.getUrl() + "\n"
-						+ "Miasto" + w.getCity()
+						+ "Miasto: " + w.getCity()
 				: LocalDate.now() + " " + LocalTime.now() + "\nPobrano dane pogodowe z adresu: "
-						+ WeatherAPIAdress.META_WEATHER.getUrl() + "\n" + "Miasto" + w.getCity();
+						+ WeatherAPIAdress.META_WEATHER.getUrl() + "\n" + "Miasto: " + w.getCity();
 	}
 
 }
